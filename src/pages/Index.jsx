@@ -1,4 +1,4 @@
-import { Box, Heading, List, ListItem, Text, VStack, Image } from "@chakra-ui/react";
+import { Box, Heading, List, ListItem, Text, VStack, Image, Link } from "@chakra-ui/react";
 import { FaBuilding, FaRoad, FaUserInjured } from "react-icons/fa";
 
 const Index = () => {
@@ -35,6 +35,11 @@ const Index = () => {
         </ListItem>
         <ListItem>
           <Text>地域的影響: {earthquakeData.localizedEffects}</Text>
+        </ListItem>
+        <ListItem>
+          <Link href="https://example.com/earthquake-verification" isExternal>
+            詳細情報はこちら
+          </Link>
         </ListItem>
       </List>
     </VStack>
