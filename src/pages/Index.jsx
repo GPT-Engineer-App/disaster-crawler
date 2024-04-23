@@ -14,27 +14,27 @@ const Index = () => {
   return (
     <VStack spacing={4} p={5}>
       <Heading as="h1" size="xl">
-        Noto Peninsula Earthquake Report
+        能登半島地震報告
       </Heading>
-      <Image src={earthquakeData.imageUrl} alt="Earthquake Damage" boxSize="300px" objectFit="cover" />
+      <Image src={earthquakeData.imageUrl} alt="地震の被害" boxSize="300px" objectFit="cover" />
       <List spacing={3}>
         <ListItem>
           <Text>
-            <FaUserInjured /> Human Casualties: {earthquakeData.humanCasualties}
+            <FaUserInjured /> 人的被害: {earthquakeData.humanCasualties}
           </Text>
         </ListItem>
         <ListItem>
           <Text>
-            <FaBuilding /> Damaged Buildings: {earthquakeData.damagedBuildings}
+            <FaBuilding /> 建物の損傷: {earthquakeData.damagedBuildings}
           </Text>
         </ListItem>
         <ListItem>
           <Text>
-            <FaRoad /> Infrastructure Damage: {earthquakeData.infrastructureDamage}
+            <FaRoad /> インフラの損傷: {earthquakeData.infrastructureDamage}
           </Text>
         </ListItem>
         <ListItem>
-          <Text>Localized Effects: {earthquakeData.localizedEffects}</Text>
+          <Text>地域的影響: {earthquakeData.localizedEffects}</Text>
         </ListItem>
       </List>
     </VStack>
